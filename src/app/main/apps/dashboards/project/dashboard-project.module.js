@@ -7,7 +7,7 @@
         .config(config);
 
     /** @ngInject */
-    function config($stateProvider, msApiProvider)
+    function config($stateProvider, msApiProvider, $translatePartialLoaderProvider)
     {
         // State
         $stateProvider.state('app.dashboards_project', {
@@ -29,6 +29,9 @@
 
         // Api
         msApiProvider.register('dashboard.project', ['app/data/dashboard/project/data.json']);
+
+        // Translation
+        $translatePartialLoaderProvider.addPart('app/main/apps/dashboards/project');
     }
 
 })();

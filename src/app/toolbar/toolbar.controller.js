@@ -7,7 +7,7 @@
         .controller('ToolbarController', ToolbarController);
 
     /** @ngInject */
-    function ToolbarController($rootScope, $q, $state, $timeout, $mdSidenav, $translate, $mdToast, msNavigationService)
+    function ToolbarController($rootScope, $q, $state, $timeout, $mdSidenav, $translate, $mdToast, msNavigationService, api, $scope, $window)
     {
         var vm = this;
 
@@ -116,7 +116,22 @@
          */
         function logout()
         {
-            // Do logout here..
+            console.log("TOKEN: : "+JSON.stringify($scope.$storage.user.session.token));
+            
+            api.logout.get({'token': $scope.$storage.user.session.token},
+
+                // Success
+                function (response) {
+                    console.log(response);
+                    delete $scope.$storage.user;
+                    $window.location.href='/pages/auth/login-v2';
+                },
+
+                // Error
+                function (response) {
+                    console.error(response);
+                }
+            );
         }
 
         /**

@@ -22,24 +22,24 @@
 
             // Apps
             'app.dashboards',
-            'app.calendar',
-            'app.e-commerce',
-            'app.mail',
-            'app.chat',
-            'app.file-manager',
-            'app.scrumboard',
-            'app.gantt-chart',
-            'app.todo',
-            'app.contacts',
-            'app.notes',
+            // 'app.calendar',
+            // 'app.e-commerce',
+            // 'app.mail',
+            // 'app.chat',
+            // 'app.file-manager',
+            // 'app.scrumboard',
+            // 'app.gantt-chart',
+            // 'app.todo',
+            // 'app.contacts',
+            // 'app.notes',
 
             // Pages
             'app.pages',
 
             // User Interface
-            'app.ui',
+            // 'app.ui',
 
             // Components
-            'app.components'
+            // 'app.components'
         ]);
 })();

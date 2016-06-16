@@ -7,7 +7,7 @@
         .controller('LoginV2Controller', LoginV2Controller);
 
     /** @ngInject */
-    function LoginV2Controller($scope, api)
+    function LoginV2Controller($scope, api, $window)
     {
         $scope.submitLoginForm = function () {
             var email=$scope.vm.form.email;
@@ -19,6 +19,8 @@
                 // Success
                 function (response) {
                     console.log(response);
+                    $scope.$storage.user=response;
+                    $window.location.href='/dashboard-project';
                 },
 
                 // Error

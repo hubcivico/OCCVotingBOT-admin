@@ -7,9 +7,11 @@
         .controller('IndexController', IndexController);
 
     /** @ngInject */
-    function IndexController(fuseTheming)
+    function IndexController(fuseTheming, $scope, $sessionStorage)
     {
         var vm = this;
+        $scope.$storage = $sessionStorage;
+
 
         // Data
         vm.themes = fuseTheming.themes;

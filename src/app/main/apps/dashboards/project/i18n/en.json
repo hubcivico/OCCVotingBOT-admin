@@ -1,0 +1,23 @@
+{
+    "STEPPER_STEPS": {
+        "TOKEN": "Token del bot creado en Telegram",
+        "INTRO_DESCRIPTION": "Panel de gestión de votaciones.",
+        "TITLE": "Inicia sesión",
+        "DESCRIPTION": "OCCVotingBOT",
+        "EMAIL": "Email",
+        "PASSWORD": "Contraseña",
+        "REMEMBER_ME": "Recuerdame",
+        "FORGOT_PASSWORD": "¿Has olvidado la contraseña?",
+        "LOG_IN": "ENTRAR",
+        "OR": "O",
+        "WITH_GOOGLE": "Iniciar sesión con Google",
+        "WITH_FACEBOOK": "Iniciar sesión con Facebook",
+        "DONT_HAVE_ACCOUNT": "¿No tienes cuenta?",
+        "CREATE_ACCOUNT": "Crear cuenta",
+        "ERRORS": {
+            "EMAIL_REQUIRED": "Email es obligatorio",
+            "EMAIL_MUST_VALID": "Debe ser un emil valido",
+            "PASSWORD_REQUIRED": "Contraseña es obligatorio"
+        }
+    }
+}
