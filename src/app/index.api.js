@@ -189,6 +189,7 @@
 
         api.login=$resource(api.baseUrl + 'users/login/');
         api.logout=$resource(api.baseUrl + 'users/logout/');
+        api.createProject=$resource(api.baseUrl + 'project/create/');
 
         /*
          api.dashboard = {

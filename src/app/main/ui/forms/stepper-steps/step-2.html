@@ -2,8 +2,21 @@
 
     <div layout="column" layout-gt-xs="row" flex>
         <md-input-container flex="100" flex-gt-xs="50">
-            <input type="text" name="birthplace" ng-model="vm.stepper.step2.birthplace"
-                   placeholder="Birthplace">
+            <md-checkbox ng-model="vm.stepper.step2.activate_census" aria-label="¿Activar Censo?">
+                ¿Activar censo?
+            </md-checkbox>
+        </md-input-container >
+        <md-input-container flex="100" flex-gt-xs="50" ng-show="vm.stepper.step2.activate_census">
+            <input type="file" ngf-select ng-model="vm.stepper.step2.census_csv" name="file"
+                   accept="text/csv" ngf-max-size="10MB"
+                   ngf-model-invalid="errorFile">
+            <!--<div ng-messages="step1.url.$error"-->
+                 <!--ng-show="step1.url.$touched"-->
+                 <!--role="alert">-->
+                <!--<div ng-message="required">8-->
+                    <!--<span>Obligatorio</span>-->
+                <!--</div>-->
+            <!--</div>-->
         </md-input-container>
     </div>
 </div>
